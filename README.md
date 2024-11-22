@@ -35,7 +35,7 @@ payment-processing-ui/
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/yourusername/payment-processing-ui.git
+git clone https://github.com/emmanuelayinde/Payment-Card-Processing-UI.git
 cd payment-processing-ui
 ```
 
