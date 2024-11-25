@@ -2,23 +2,6 @@
 
 This project is a user interface for the payment processing system. It allows users to manage and process payments efficiently.
 
-## Project Structure
-
-```
-payment-processing-ui/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── App.js
-│   ├── main.jsx
-│   └── ...
-├── .env
-|__ .env.sample
-├── package.json
-└── README.md
-```
-
 ## Features
 
 - Payment processing
@@ -36,29 +19,43 @@ payment-processing-ui/
 
 ```sh
 git clone https://github.com/emmanuelayinde/Payment-Card-Processing-UI.git
-cd payment-processing-ui
+cd Payment-Card-Processing-UI
 ```
 
 2. Install dependencies:
 
 ```sh
-npm install
+yarn
 ```
 
 3. Create a `.env` file in the root directory and add the following environment variables:
 
 ```env
-VITE_SQUARE_APPLICATION_ID=your_application_id
-VITE_SQUARE_ACCESS_TOKEN=your_access_token
+VITE_SQUARE_APPLICATION_ID=your-sqaure-application-id
+VITE_SQUARE_LOCATION_ID=your-square-location-id
 ```
 
 4. Start the development server:
 
 ```sh
-npm start
+yarn dev
 ```
 
 5. Open your browser and navigate to `http://localhost:5173`.
+
+## Running the Application
+
+- Open your browser and navigate to `http://localhost:5173`.
+- Enter the following to make sudo payment:
+
+```
+Card Number: 4111 1111 1111 1111
+Expire Date: 12/27
+CVV Number: 111
+ZIP: 100001
+```
+
+- Copy the token generated and head over to the [server api docs](https://payment-card-processing-server.onrender.com/api-docs#/Payments/PaymentsController_createPayment) page and use the token as the payment `sourceId`
 
 ## Scripts
 
